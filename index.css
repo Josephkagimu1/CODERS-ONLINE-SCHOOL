@@ -1,0 +1,69 @@
+h1 {
+    font-weight: bold !important;
+    color: green;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: red;
+    font-weight: 800;
+    -webkit-text-stroke: 1px yellow;
+}
+
+body {
+    background: linear-gradient(to bottom, lightblue, red);
+}
+
+.logo {
+    color: red !important;
+    font-weight: 800;
+}
+
+.logo::before {
+    content: '';
+    border: 5px solid green;
+    border-radius: 50px;
+    position: absolute;
+    padding: 10px;
+    width: 60px;
+    height: 40px;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.img1 {
+    padding: 10px;
+}
+
+.img-home {
+    border: 5px solid green;
+    border-radius: 20px;
+}
+
+.page2 p {
+    color: blue;
+    font-weight: bold !important;
+}
+
+/* Typing text effect */
+h2 {
+    color: red;
+    font-family: "arial";
+    /* font-size: 3em; */
+    padding-left: 30px;
+    /* margin: 10px 0 0 10px; */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end);
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+    from {
+        width: 0;
+        transition: all 2s ease-in-out;
+    }
+}
